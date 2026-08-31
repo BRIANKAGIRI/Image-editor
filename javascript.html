@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Average Calculator</title>
+</head>
+<body>
+    <script>
+        let total = 0;
+        let count = 0;
+
+        while (count < 5) {
+            let input = prompt("Enter integer value " + (count + 1) + ":");
+            let value = parseInt(input);
+            
+            if (!isNaN(value)) {
+                total += value;
+                count++;
+            } else {
+                alert("Please enter a valid integer.");
+            }
+        }
+
+        let average = total / 5;
+        document.write("<h1>The average is: " + average + "</h1>");
+    </script>
+</body>
+</html>
